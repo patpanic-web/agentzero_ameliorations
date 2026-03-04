@@ -1,0 +1,157 @@
+# 📔 Journal des Décisions - Agent-Zero: Modular Optimizer
+
+> **Dernière mise à jour :** 2026-03-04
+
+---
+
+## 🏗️ Architecture Décisionnelle
+
+Ce journal trace toutes les décisions techniques importantes prises dans le cadre du projet.
+
+---
+
+## Décision #001: Structure BMAD pour Documentation Persistante
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | 2026-03-04 |
+| **Statut** | ✅ Adoptée |
+| **Décideur** | Product Owner |
+| **Contexte** | Besoin d'un état des lieux exhaustif persistant entre conversations |
+
+### Problème
+Le contexte de conversation est perdu entre sessions, rendant difficile le suivi de l'avancement du projet.
+
+### Options Considérées
+1. **Mémoire Agent-Zero** - Limitée, contextuelle
+2. **Fichiers Markdown structurés** - Persistant, versionnable, accessible
+3. **Base de données** - Overkill pour le besoin
+
+### Décision
+Adoption de **fichiers Markdown structurés selon BMAD** dans le dossier `knowledge/`.
+
+### Justification
+- Approche méthodologique éprouvée (BMAD)
+- Fichiers persistants et versionnables
+- Accessible par tout agent sans contexte préalable
+- Structure claire en 4 phases
+
+### Conséquences
+- Création de la structure de dossiers BMAD
+- Documentation systématique des décisions
+- Mise à jour continue de l'état des lieux
+
+---
+
+## Décision #002: Utilisation de MCP Servers
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | Pré-existante |
+| **Statut** | ✅ Adoptée |
+
+### Décision
+Utilisation de serveurs MCP (Model Context Protocol) pour l'extension des capacités d'Agent-Zero.
+
+### MCP Installés
+- Tavily (recherche web)
+- Playwright (automatisation navigateur)
+- Git (versioning)
+- Docker (conteneurs)
+- System Diagnostics (monitoring)
+
+---
+
+## 📌 Template pour Nouvelle Décision
+
+```markdown
+## Décision #XXX: [Titre]
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | YYYY-MM-DD |
+| **Statut** | Proposée/Adoptée/Rejetée |
+| **Décideur** | Qui a pris la décision |
+
+### Problème
+[Description du problème]
+
+### Options Considérées
+1. **Option A** - Description
+2. **Option B** - Description
+
+### Décision
+[Décision finale]
+
+### Justification
+[Raisons]
+
+### Conséquences
+[Impacts]
+```
+
+---
+
+## Décision #003: Stratégie Multi-Modèles et Délégation Active
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | 2026-03-04 |
+| **Statut** | ✅ Adoptée - En attente d'implémentation |
+| **Décideur** | Product Owner (sur recommandation Agent 0) |
+| **Source** | Analyse comparative + Recherche web validée |
+
+### Problème
+1. Agent 0 a tendance à exécuter les tâches lui-même plutôt que déléguer
+2. Pas d'optimisation des coûts via modèles économiques pour les subordonnés
+3. Prompts de délégation passifs ("can delegate" vs "must delegate")
+
+### Options Considérées
+
+1. **Option A : Rester sur GLM-5 uniquement**
+   - Coût actuel : ~$1.48/1M tokens
+   - Avantage : Simple, économique
+   - Inconvénient : Pas d'optimisation, qualité variable
+
+2. **Option B : Migrer vers Claude Sonnet uniquement**
+   - Coût : ~$7.00/1M tokens (4.7x plus cher)
+   - Avantage : Meilleure qualité
+   - Inconvénient : Coût élevé sans délégation
+
+3. **Option C : Architecture Multi-Modèles avec Délégation Active** (RECOMMANDÉE)
+   - Coût estimé : $0.83-1.51/1M tokens selon niveau de délégation
+   - Avantage : Qualité supérieure + coût optimisé
+   - Inconvénient : Complexité setup initial
+
+### Décision
+Adoption de l'**Option C : Architecture Multi-Modèles avec Délégation Active**.
+
+### Allocation des Modèles
+| Profil | Modèle | Usage |
+|--------|--------|-------|
+| Agent 0 | GLM-5 (actuel) ou Claude Sonnet | Orchestration, raisonnement |
+| Developer | DeepSeek V3.2 | Code, tests, boilerplate |
+| Hacker | Gemini 2.0 Flash | Sécurité, scripts |
+| Researcher | DeepSeek V3.2 | Recherche, documentation |
+
+### Justification
+1. **Économies documentées** : 57-80% de réduction en production (sources : Infralovers, BusinessPlusAI)
+2. **Performance validée** : DeepSeek V3 supérieur de 30.7% à Claude 3 Sonnet sur benchmarks
+3. **Standard industriel** : Multi-modèle = architecture standard 2025
+4. **Approche non-intrusive** : Modifie prompts/settings, pas le code source
+
+### Conséquences
+- Création de `settings.json` pour chaque profil subordonné
+- Modification des prompts Agent 0 pour délégation active
+- Documentation de réversibilité obligatoire
+- Mesure des coûts avant/après requise
+
+### Contraintes Spécifiques
+- ⚠️ **Préserver la configuration existante** : Ne pas recréer les agents de 0
+- ⚠️ **Modifier le comportement** : Agir sur les prompts et settings uniquement
+
+### Références
+- Analyse détaillée : `knowledge/solutions/ANALYSE_MULTI_MODEL_STRATEGY.md`
+- Backlog : `knowledge/backlog/BACKLOG.md` (Tâche #1)
+
+---
