@@ -9,8 +9,9 @@
 | Statut | Nombre |
 |--------|--------|
 | À FAIRE | 5 |
-| EN COURS | 0 |
+| EN COURS | 1 |
 | TERMINÉ | 1 |
+| ABANDONNÉ | 1 |
 | BLOQUÉ | 0 |
 
 ---
@@ -83,7 +84,7 @@ Le PO a mentionné cette tâche comme prioritaire après la finalisation de la T
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | HAUTE |
-| **Statut** | 📋 À FAIRE |
+| **Statut** | ❌ ABANDONNÉ |
 | **Date création** | 2026-03-04 |
 | **UUID** | tool-aug-001 |
 | **Source** | Recherche web + Audit local |
@@ -117,7 +118,7 @@ Enrichir les descriptions des outils MCP pour améliorer la précision de sélec
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | HAUTE (avec tests) |
-| **Statut** | 📋 À FAIRE |
+| **Statut** | 🔄 EN COURS |
 | **Date création** | 2026-03-04 |
 | **UUID** | lazy-mcp-001 |
 | **Source** | Recherche web + Audit local |
