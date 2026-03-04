@@ -1,0 +1,128 @@
+[
+  {
+    "name": "tavily_search",
+    "server": "tavily",
+    "description": "Search the web for current information on any topic. Use for news, facts, or data beyond your knowledge cutoff. Returns snippets and source URLs.",
+    "category": "web_search",
+    "parameters": [
+      "query",
+      "search_depth",
+      "max_results"
+    ]
+  },
+  {
+    "name": "tavily_extract",
+    "server": "tavily",
+    "description": "Extract content from URLs. Returns raw page content in markdown or text format. Use when you need full content from web pages.",
+    "category": "web_extraction",
+    "parameters": [
+      "urls",
+      "extract_depth",
+      "format"
+    ]
+  },
+  {
+    "name": "tavily_crawl",
+    "server": "tavily",
+    "description": "Crawl a website starting from a URL. Extracts content from pages with configurable depth and breadth. Useful for comprehensive site analysis.",
+    "category": "web_crawling",
+    "parameters": [
+      "url",
+      "max_depth",
+      "max_breadth",
+      "limit"
+    ]
+  },
+  {
+    "name": "browser_navigate",
+    "server": "playwright",
+    "description": "Navigate to a URL in the browser. Use for web automation and testing.",
+    "category": "browser_automation",
+    "parameters": [
+      "url"
+    ]
+  },
+  {
+    "name": "browser_click",
+    "server": "playwright",
+    "description": "Perform click on a web page element. Use for browser interactions.",
+    "category": "browser_automation",
+    "parameters": [
+      "element",
+      "ref"
+    ]
+  },
+  {
+    "name": "browser_snapshot",
+    "server": "playwright",
+    "description": "Capture accessibility snapshot of the current page. Better than screenshot for understanding page structure.",
+    "category": "browser_automation",
+    "parameters": []
+  },
+  {
+    "name": "browser_type",
+    "server": "playwright",
+    "description": "Type text into editable element on a web page. Use for form filling.",
+    "category": "browser_automation",
+    "parameters": [
+      "element",
+      "ref",
+      "text"
+    ]
+  },
+  {
+    "name": "git_status",
+    "server": "git",
+    "description": "Shows the working tree status. Use for checking repository state.",
+    "category": "version_control",
+    "parameters": [
+      "repo_path"
+    ]
+  },
+  {
+    "name": "git_diff",
+    "server": "git",
+    "description": "Shows differences between branches or commits. Use for code review.",
+    "category": "version_control",
+    "parameters": [
+      "repo_path",
+      "target"
+    ]
+  },
+  {
+    "name": "git_commit",
+    "server": "git",
+    "description": "Records changes to the repository. Use for saving work.",
+    "category": "version_control",
+    "parameters": [
+      "repo_path",
+      "message"
+    ]
+  },
+  {
+    "name": "check_memory",
+    "server": "system_diag",
+    "description": "Get RAM and swap usage information. Use for system monitoring.",
+    "category": "system_monitoring",
+    "parameters": []
+  },
+  {
+    "name": "check_disk_usage",
+    "server": "system_diag",
+    "description": "Get disk usage summary. Use for storage management.",
+    "category": "system_monitoring",
+    "parameters": [
+      "path"
+    ]
+  },
+  {
+    "name": "list_processes",
+    "server": "system_diag",
+    "description": "List running processes. Use for process management and debugging.",
+    "category": "system_monitoring",
+    "parameters": [
+      "filter_name",
+      "sort_by"
+    ]
+  }
+]

@@ -155,3 +155,66 @@ Adoption de l'**Option C : Architecture Multi-Modèles avec Délégation Active*
 - Backlog : `knowledge/backlog/BACKLOG.md` (Tâche #1)
 
 ---
+
+---
+
+## Décision #004: Analyse des Optimisations MCP (Lazy Loading, Caching, etc.)
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | 2026-03-04 |
+| **Statut** | 📋 EN ATTENTE DE VALIDATION |
+| **Décideur** | Product Owner (recommandation Agent 0) |
+| **Source** | Recherche web approfondie + Audit technique local |
+
+### Problème
+Optimisation de la consommation de tokens et de la qualité des réponses dans Agent-Zero via des solutions non-intrusives (No-Core-Change).
+
+### Analyse Effectuée
+1. **Recherche web approfondie** sur l'état de l'art 2025
+2. **Audit technique** du code Agent-Zero (fichiers MCP)
+3. **Évaluation de faisabilité** et compatibilité
+
+### Optimisations Identifiées
+
+| # | Optimisation | Source | Impact | Risque |
+|---|--------------|--------|--------|--------|
+| 1 | Tool Description Augmenter | arXiv 2025 | +25% qualité | Faible |
+| 2 | Lazy MCP Tool Loading | GitHub Anthropic #11364, LinkedIn | -47% tokens | Moyen (Goose) |
+| 3 | MCP Response Caching | Fast.io, Tim Kellogg | -80% latence | Moyen |
+| 4 | AGENTS.md Generator | OpenAI AAIF | Portabilité | Faible |
+
+### Risque Critique Documenté
+**Goose (Block) a supprimé leur "Tool Selection Strategy"** après échec avec embeddings locaux.
+- Leçon: Le lazy loading basé sur classification intention peut échouer.
+
+### Audit Technique Local
+- Fichier clé: `/a0/python/extensions/system_prompt/_10_system_prompt.py`
+- Ligne 55: `get_tools_prompt()` charge TOUS les outils MCP
+- Architecture compatible avec extension (pas de core change)
+
+### Recommandation
+1. **Priorité 1**: Tool Description Augmenter (faible risque)
+2. **Priorité 2**: Lazy MCP Tool Loading (avec tests robustes)
+3. **Priorité 3**: MCP Caching (attendre stabilisation pattern)
+4. **Priorité 4**: AGENTS.md (optionnel pour distribution externe)
+
+### Fichiers Créés
+- `knowledge/bmad/analysis/OPTIMISATIONS_MCP_2025.md` - Analyse complète
+
+### Conséquences
+- Ajout au BACKLOG des tâches d'implémentation
+- Tests de faisabilité requis avant implémentation Lazy Loading
+
+### Références
+- GitHub Anthropic Issue #11364
+- arXiv: "MCP Tool Descriptions Are Smelly" (2025)
+- Fast.io: "MCP Server Caching"
+- OpenAI: AGENTS.md Standard
+
+### Validation Requise
+- [ ] Ordre des priorités validé
+- [ ] Tests de faisabilité demandés
+- [ ] Risque Goose accepté/refusé
+
+---
