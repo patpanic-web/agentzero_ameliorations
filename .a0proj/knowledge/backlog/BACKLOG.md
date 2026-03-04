@@ -8,7 +8,7 @@
 
 | Statut | Nombre |
 |--------|--------|
-| À FAIRE | 4 |
+| À FAIRE | 5 |
 | EN COURS | 0 |
 | TERMINÉ | 1 |
 | BLOQUÉ | 0 |
@@ -255,4 +255,50 @@ Le modèle actuel est compact (80MB) mais de qualité moyenne. Il existe des alt
 - [ ] Benchmark des modèles
 - [ ] Recommandation argumentée
 - [ ] Guide de migration si applicable
+
+
+---
+
+### Tâche #8: Résolution Problème Chrome / Tests Automatiques Navigateur
+
+| Champ | Valeur |
+|-------|--------|
+| **Priorité** | À DÉFINIR (en attente clarification) |
+| **Statut** | 📋 À FAIRE |
+| **Date création** | 2026-03-04 |
+| **UUID** | chrome-browser-001 |
+| **Source** | Demande PO |
+
+#### Description
+Investiguer et résoudre le problème d'installation de Chrome pour les tests automatiques. Le PO souhaite évaluer l'utilité d'un navigateur Chrome fonctionnel pour les phases de test automatiques.
+
+#### Contexte
+- Chrome standard ne peut pas être installé sur Kali (non supporté)
+- Playwright MCP apporte déjà Chromium (`chromium-1208`)
+- Un test réussi existe (`screenshots/playwright_test_success.png`)
+
+#### Questions à Résoudre
+1. Le PO a-t-il besoin de Chrome spécifiquement ou de tests navigateur ?
+2. Playwright Chromium répond-il au besoin ?
+3. Quels types de tests automatiques sont envisagés ?
+4. Quelle est la valeur ajoutée d'avoir Chrome vs Chromium ?
+
+#### Alternatives Identifiées
+| Option | Avantages | Inconvénients |
+|--------|-----------|---------------|
+| **Playwright Chromium** | Déjà installé, fonctionne | Pas d'extensions Chrome |
+| **Chrome Docker externe** | Chrome officiel | Complexité, tokens |
+| **Chrome Headless Shell** | Léger | Configuration requise |
+
+#### Prérequis
+- [ ] Clarification du besoin avec le PO
+- [ ] Définition du type de tests envisagés
+
+#### Livrables Attendus
+- [ ] Analyse comparative Chrome vs Chromium pour les tests
+- [ ] Recommandation argumentée
+- [ ] Si applicable: solution d'installation
+
+#### Note
+Cette tâche nécessite une phase Analysis BMAD complète avant toute implémentation.
 
