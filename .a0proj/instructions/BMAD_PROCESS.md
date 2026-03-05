@@ -44,6 +44,20 @@
 
 ---
 
+## 📌 Backlog = Source de Vérité Unique (SSOT)
+
+- Le backlog (`knowledge/backlog/BACKLOG.md`) est la référence absolue de l'état du projet
+- Toute décision impactant une tâche → mise à jour immédiate du backlog
+- Toute nouvelle information (scope, priorité, dépendance) → refléter dans le backlog
+
+## ✅ Checklist Fin de Sprint
+
+- [ ] Tâches du sprint marquées TERMINÉ dans le backlog
+- [ ] Revue complète du backlog : toutes les tâches restantes sont-elles toujours exactes ?
+- [ ] Décisions prises pendant le sprint reflétées dans les descriptions/priorités du backlog
+- [ ] Rapport de sprint créé dans `knowledge/bmad/implementation/`
+- [ ] Commit et push
+
 ## 📝 Leçon Apprise (2026-03-04)
 
 **Erreur commise :** J'ai essayé de résoudre le problème Chrome au lieu de simplement l'ajouter au backlog.
