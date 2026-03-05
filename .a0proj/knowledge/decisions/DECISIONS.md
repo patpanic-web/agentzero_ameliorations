@@ -219,3 +219,7 @@ Optimisation de la consommation de tokens et de la qualité des réponses dans A
 
 ---
 \n| D1772735935 | Création du skill 'project-governance' avec structure complète (SKILL.md + script + 10 templates) | 2026-03-05 | Skill créé pour initialiser la gouvernance projet à 2 niveaux : niveau 1 (Backlog + Git + Decisions) et niveau 2 (BMAD 4 phases) |
+
+## D9 — LLM principal : changement manuel PO (2026-03-05)
+**Décision :** Le PO a changé manuellement le LLM principal de claude-opus à claude-sonnet-4.6 pour réduire les coûts.
+**Règle :** Le choix du modèle LLM est sous contrôle exclusif du PO. L'agent ne doit pas le signaler comme incohérence.
