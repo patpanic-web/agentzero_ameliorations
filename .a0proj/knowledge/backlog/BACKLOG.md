@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-06 (Sprint 4 — ajout A14 : désactivation MCP Git)
+> Dernière mise à jour : 2026-03-06 (correction doublons A14→A16, A15→A17 + planification Sprint 5)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -24,8 +24,8 @@
 | T7 | Évaluation Modèle Embedding | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
 | T8 | Chrome / Tests Navigateur | 🟢 P3 | 🟢 FAIBLE | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
 
-| A14 | Intégration BMAD personas dans l'environnement | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | BMAD_PERSONAS.md créé + template Niv.2 mis à jour |
-| A15 | Validation ToolRegistry Filter en production | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | 📋 À FAIRE | Réduction ~48% tokens/msg — code prêt, validation prod requise |
+| A16 | Intégration BMAD personas dans l'environnement | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | BMAD_PERSONAS.md créé + template Niv.2 mis à jour |
+| A17 | Validation ToolRegistry Filter en production | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | 📋 À FAIRE | Réduction ~48% tokens/msg — code prêt, validation prod requise |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |

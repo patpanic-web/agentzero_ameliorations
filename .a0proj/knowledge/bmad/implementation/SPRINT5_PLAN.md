@@ -1,4 +1,4 @@
-# 📋 Sprint 4 — Plan
+# 📋 Sprint 5 — Plan
 
 ## Thème : "La Performance"
 
@@ -9,11 +9,11 @@ Valider et activer le ToolRegistry Filter en production → réduction ~48% toke
 
 | ID | Titre | Effort | Priorité |
 |----|-------|--------|----------|
-| **A15** | Validation ToolRegistry Filter en production | ⏱️ 2h | 🔴 P1 CRITIQUE |
+| **A17** | Validation ToolRegistry Filter en production | ⏱️ 2h | 🔴 P1 CRITIQUE |
 | **A6** | Corriger Git MCP default path | ⏱️ 5 min | 🟡 Quick win |
 | **A9** | Remplir git_url dans project.json | ⏱️ 2 min | 🟡 Quick win |
 
-## Définition de Done — A15
+## Définition de Done — A17
 - [ ] Extension chargée et active au démarrage
 - [ ] Logs de filtrage visibles ("Filtered X tools down to Y")
 - [ ] Mesure tokens avant/après documentée
