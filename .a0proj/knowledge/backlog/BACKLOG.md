@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-05 (Sprint 3 clôturé — consolidation backlog)
+> Dernière mise à jour : 2026-03-05 (Sprint 4 clôturé — Quick wins + Config LLM)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -15,7 +15,7 @@
 | A2 | Override `call_sub.md` → MUST delegate | 🔴 P0 | 🔴 MAJEUR | ⏱️ 15 min | ✅ TERMINÉ (Sprint 1) | |
 | A3 | Enrichir profil Hacker (14 → 200 lignes) | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 2) | |
 | A4 | Renforcer rôle orchestrateur Agent0 | 🔴 P1 | 🟡 HAUT | ⏱️ 30 min | ✅ TERMINÉ (Sprint 2) | |
-| A5 | Documentation & config LLM par agent | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | 📋 À FAIRE | |
+| A5 | Documentation & config LLM par agent | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | |
 | A7 | Rigueur documentation/backlog (processus) | 🟢 P3 | 🟢 MOYEN | ⏱️ 30 min | 📋 À FAIRE | |
 | T2 | Fallback Tavily Recherche Web | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | À réaligner avec nouveaux axes |
 | T4 | Lazy MCP Tool Loading | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | Aucune implémentation trouvée |
@@ -32,8 +32,8 @@
 | A10 | Template gouvernance projet Niv.1/2 | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 3) | |
 | A12 | Backlog SSOT + checklist fin de sprint | 🔴 P1 | 🔴 HAUT | ⏱️ 15 min | ✅ TERMINÉ (Sprint 3) | |
 | A13 | Instruction bootstrap session (lire backlog) | 🔴 P1 | 🔴 HAUT | ⏱️ 5 min | ✅ TERMINÉ (Sprint 3) | |
-| A6 | Corriger Git MCP default path | 🟡 P2 | 🟡 MOYEN | ⏱️ 5 min | 📋 À FAIRE | |
-| A9 | Remplir git_url dans project.json | 🟡 P2 | 🟡 MOYEN | ⏱️ 2 min | 📋 À FAIRE | |
+| A6 | Corriger Git MCP default path | 🟡 P2 | 🟡 MOYEN | ⏱️ 5 min | ✅ TERMINÉ (Sprint 4) | |
+| A9 | Remplir git_url dans project.json | 🟡 P2 | 🟡 MOYEN | ⏱️ 2 min | ✅ TERMINÉ (Sprint 4) | |
 
 ## 🔒 AXE SÉCURITÉ
 
@@ -59,3 +59,4 @@
 - **Sprint 1** (2026-03-05) : "La Fondation" — A1 + A2 (delegate-first behavior)
 - **Sprint 2** (2026-03-05) : "Les Profils" — A3 + A4 (hacker enrichment + orchestration)
 - **Sprint 3** (2026-03-05) : "La Gouvernance" — A8 + A10 + A12 + A13 (git governance + templates + SSOT + bootstrap)
+- **Sprint 4** (2026-03-05) : "La Configuration" — A9 + A6 + A5 (git_url + MCP path + audit LLM config)
