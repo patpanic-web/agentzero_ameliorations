@@ -46,6 +46,7 @@
 
 ## 📌 Backlog = Source de Vérité Unique (SSOT)
 
+- En début de session, lis TOUJOURS le backlog (`knowledge/backlog/BACKLOG.md`) pour identifier l'état du projet
 - Le backlog (`knowledge/backlog/BACKLOG.md`) est la référence absolue de l'état du projet
 - Toute décision impactant une tâche → mise à jour immédiate du backlog
 - Toute nouvelle information (scope, priorité, dépendance) → refléter dans le backlog

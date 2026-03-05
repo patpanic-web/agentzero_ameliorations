@@ -23,6 +23,12 @@
 
 ## 📋 Tableau de Suivi des Tâches Actives
 
+### A13 — Instruction bootstrap session
+- **Objectif** : Ajouter une instruction pour que l'agent lise le backlog en début de session
+- **Statut** : ✅ TERMINÉ (Sprint 3)
+- **Fichier** : `instructions/BMAD_PROCESS.md`
+- **Livrable** : 1 ligne ajoutée dans section SSOT
+
 | ID | Title | Priority | Impact | Effort | Status |
 |----|-------|----------|--------|--------|--------|
 | T1 | Créer skill 'project-governance' avec templates de gouvernance à 2 niveaux | 🔴 P1 | 🔴 HIGH | ⏱️ 1h | ✅ DONE |
