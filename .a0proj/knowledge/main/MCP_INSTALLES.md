@@ -10,7 +10,7 @@
 |-----|--------|----------|-------------|
 | tavily | ✅ Actif | `npx -y tavily-mcp@latest` | Recherche web agentique |
 | playwright | ✅ Actif | `npx -y @playwright/mcp@latest` | Automatisation navigateur |
-| **git** | ✅ Configuré | `uvx mcp-server-git --repository ...` | Opérations Git sécurisées |
+| **git** | ❌ Désactivé (2026-03-05) | `uvx mcp-server-git --repository ...` | Désactivé — surcoût tokens sans valeur ajoutée |
 | **docker-mcp** | ✅ Configuré | `uvx docker-mcp` | Gestion containers Docker |
 | **system-diag** | ✅ Configuré | `/opt/venv-a0/bin/system-diag-mcp` | Diagnostic système Ubuntu |
 

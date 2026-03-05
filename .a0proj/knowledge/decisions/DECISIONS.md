@@ -223,3 +223,35 @@ Optimisation de la consommation de tokens et de la qualité des réponses dans A
 ## D9 — LLM principal : changement manuel PO (2026-03-05)
 **Décision :** Le PO a changé manuellement le LLM principal de claude-opus à claude-sonnet-4.6 pour réduire les coûts.
 **Règle :** Le choix du modèle LLM est sous contrôle exclusif du PO. L'agent ne doit pas le signaler comme incohérence.
+
+---
+
+## Décision #010: Désactivation MCP Git
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | 2026-03-06 |
+| **Statut** | ✅ Adoptée |
+| **Décideur** | Product Owner |
+
+### Problème
+Le MCP Git injecte ~500 tokens de descriptions d'outils dans chaque prompt système, même quand il n'est pas utilisé. L'agent utilise le terminal git (code_execution_tool) pour 100% des opérations Git, rendant le MCP superflu.
+
+### Options Considérées
+1. **Garder le MCP Git** — Sécurité théorique, surcoût tokens constant
+2. **Désactiver le MCP Git** — Économie tokens, pas de perte fonctionnelle
+
+### Décision
+Désactivation du MCP Git (`"disabled": true` dans settings.json).
+
+### Justification
+- Économie de ~500 tokens par requête LLM
+- 100% des opérations Git couvertes par le terminal
+- Aligné avec le principe : "Si un outil n'apporte pas un gain mesurable, il doit être écarté"
+- Le PO ne vérifie pas les commits manuellement — le MCP n'apportait pas de sécurité réelle
+
+### Réactivation si besoin
+```json
+// Dans settings.json > mcpServers > git
+"disabled": false  // ou supprimer la clé
+```
