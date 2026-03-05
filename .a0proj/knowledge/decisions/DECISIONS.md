@@ -218,3 +218,4 @@ Optimisation de la consommation de tokens et de la qualité des réponses dans A
 - [ ] Risque Goose accepté/refusé
 
 ---
+\n| D1772735935 | Création du skill 'project-governance' avec structure complète (SKILL.md + script + 10 templates) | 2026-03-05 | Skill créé pour initialiser la gouvernance projet à 2 niveaux : niveau 1 (Backlog + Git + Decisions) et niveau 2 (BMAD 4 phases) |
