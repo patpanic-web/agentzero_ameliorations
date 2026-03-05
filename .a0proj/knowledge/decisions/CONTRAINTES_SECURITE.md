@@ -105,3 +105,16 @@ rm /a0/usr/agents/agent0/prompts/agent.system.main.solving.md
 3. Modifier UNIQUEMENT ces parties
 4. Vérifier que le reste est intact
 5. Documenter les changements effectués (diff)
+
+## 🔴 Règle Sécurité Mémoire — memory_forget (2026-03-05)
+
+**Incident :** Utilisation de `memory_forget` avec seuil 0.6 → 27 mémoires supprimées accidentellement.
+
+**Règles ABSOLUES :**
+1. Toujours utiliser `memory_load` AVANT toute suppression pour voir exactement ce qui sera supprimé
+2. Pour suppression ciblée → utiliser `memory_delete` avec IDs spécifiques
+3. `memory_forget` = réservé aux nettoyages larges intentionnels UNIQUEMENT
+4. Ne JAMAIS utiliser `memory_forget` avec un seuil inférieur à 0.75
+5. En cas de doute → demander confirmation au PO avant de supprimer
+
+**Portée :** Règle globale agent (enregistrée dans behaviour_adjustment) + règle projet.
