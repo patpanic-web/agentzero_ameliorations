@@ -35,7 +35,7 @@
 | A12 | Backlog SSOT + checklist fin de sprint | 🔴 P1 | 🔴 HAUT | ⏱️ 15 min | ✅ TERMINÉ (Sprint 3) | |
 | A13 | Instruction bootstrap session (lire backlog) | 🔴 P1 | 🔴 HAUT | ⏱️ 5 min | ✅ TERMINÉ (Sprint 3) | |
 | A6 | Corriger Git MCP default path | 🟡 P2 | 🟡 MOYEN | ⏱️ 5 min | ✅ TERMINÉ (Sprint 4) |
-| A14 | Désactiver MCP Git (surcoût tokens) | 🟡 P2 | 🟡 MOYEN | ⏱️ 5 min | ✅ TERMINÉ (Sprint 4) | ~500 tokens économisés/requête | |
+| A14 | Supprimer MCP Git (surcoût tokens) | 🟡 P2 | 🟡 MOYEN | ⏱️ 5 min | ✅ TERMINÉ (Sprint 4) | ~500 tokens économisés/requête — entrée supprimée de settings.json | |
 | A9 | Remplir git_url dans project.json | 🟡 P2 | 🟡 MOYEN | ⏱️ 2 min | ✅ TERMINÉ (Sprint 4) | |
 
 ## 🔒 AXE SÉCURITÉ

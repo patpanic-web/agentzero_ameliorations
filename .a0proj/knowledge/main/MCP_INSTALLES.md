@@ -4,13 +4,13 @@
 
 ---
 
-## ✅ MCP Configurés (5 total)
+## ✅ MCP Configurés (4 actifs — git supprimé)
 
 | MCP | Statut | Commande | Description |
 |-----|--------|----------|-------------|
 | tavily | ✅ Actif | `npx -y tavily-mcp@latest` | Recherche web agentique |
 | playwright | ✅ Actif | `npx -y @playwright/mcp@latest` | Automatisation navigateur |
-| **git** | ❌ Désactivé (2026-03-05) | `uvx mcp-server-git --repository ...` | Désactivé — surcoût tokens sans valeur ajoutée |
+| **git** | 🗑️ Supprimé (2026-03-06) | — | Supprimé — surcoût ~500 tokens/requête, fonctionnalité couverte par le terminal git |
 | **docker-mcp** | ✅ Configuré | `uvx docker-mcp` | Gestion containers Docker |
 | **system-diag** | ✅ Configuré | `/opt/venv-a0/bin/system-diag-mcp` | Diagnostic système Ubuntu |
 

@@ -226,7 +226,7 @@ Optimisation de la consommation de tokens et de la qualité des réponses dans A
 
 ---
 
-## Décision #010: Désactivation MCP Git
+## Décision #010: Suppression MCP Git
 
 | Champ | Valeur |
 |-------|--------|
@@ -242,7 +242,7 @@ Le MCP Git injecte ~500 tokens de descriptions d'outils dans chaque prompt syst�
 2. **Désactiver le MCP Git** — Économie tokens, pas de perte fonctionnelle
 
 ### Décision
-Désactivation du MCP Git (`"disabled": true` dans settings.json).
+Suppression complète du MCP Git de la configuration `settings.json`.
 
 ### Justification
 - Économie de ~500 tokens par requête LLM
@@ -251,7 +251,7 @@ Désactivation du MCP Git (`"disabled": true` dans settings.json).
 - Le PO ne vérifie pas les commits manuellement — le MCP n'apportait pas de sécurité réelle
 
 ### Réactivation si besoin
-```json
-// Dans settings.json > mcpServers > git
-"disabled": false  // ou supprimer la clé
+```bash
+# Réajouter manuellement dans settings.json > mcpServers:
+# "git": { "command": "uvx", "args": ["mcp-server-git", "--repository", "/a0/usr/projects/agentzero_ameliorations"], "description": "Git operations MCP" }
 ```
