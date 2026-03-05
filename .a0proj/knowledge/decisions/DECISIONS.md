@@ -255,3 +255,12 @@ Suppression complète du MCP Git de la configuration `settings.json`.
 # Réajouter manuellement dans settings.json > mcpServers:
 # "git": { "command": "uvx", "args": ["mcp-server-git", "--repository", "/a0/usr/projects/agentzero_ameliorations"], "description": "Git operations MCP" }
 ```
+
+## D10 — Comportement proactif global + règle persistance (2026-03-06)
+**Décision :** Tout comportement ou solution doit être robuste aux redémarrages VPS/Docker sans que le PO ait à le préciser.
+**Implémentation :**
+- behaviour_adjustment Agent 0 : détection proactive de pistes + règle persistance /a0/usr/
+- /a0/usr/agents/developer/prompts/agent.system.main.role.md : créé avec signalement proactif
+- /a0/usr/agents/researcher/prompts/agent.system.main.role.md : créé avec signalement proactif  
+- /a0/usr/agents/hacker/prompts/agent.system.main.role.md : enrichi avec signalement proactif
+**Règle :** Toute solution dans /a0/usr/ ou Git uniquement. Jamais /tmp/, jamais RAM seule.
