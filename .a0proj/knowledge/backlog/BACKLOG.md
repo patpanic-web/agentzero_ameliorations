@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-06 (correction doublons A14→A16, A15→A17 + planification Sprint 5)
+> Dernière mise à jour : 2026-03-06 (A7 enrichi + A18 ajouté : audit MCPs)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -16,7 +16,7 @@
 | A3 | Enrichir profil Hacker (14 → 200 lignes) | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 2) | |
 | A4 | Renforcer rôle orchestrateur Agent0 | 🔴 P1 | 🟡 HAUT | ⏱️ 30 min | ✅ TERMINÉ (Sprint 2) | |
 | A5 | Documentation & config LLM par agent | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | |
-| A7 | Rigueur documentation/backlog (processus) | 🟢 P3 | 🟢 MOYEN | ⏱️ 30 min | 📋 À FAIRE | |
+| A7 | Rigueur documentation/backlog — relire avant chaque planification sprint | 🟢 P3 | 🟡 MOYEN | ⏱️ 30 min | 📋 À FAIRE | A13 couvre bootstrap mais pas re-lecture avant planification mid-session |
 | T2 | Fallback Tavily Recherche Web | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | À réaligner avec nouveaux axes |
 | T4 | Lazy MCP Tool Loading | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | Aucune implémentation trouvée |
 | T5 | MCP Response Caching | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | En attente de priorité |
@@ -26,6 +26,7 @@
 
 | A16 | Intégration BMAD personas dans l'environnement | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | BMAD_PERSONAS.md créé + template Niv.2 mis à jour |
 | A17 | Validation ToolRegistry Filter en production | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | 📋 À FAIRE | Réduction ~48% tokens/msg — code prêt, validation prod requise |
+| A18 | Audit utilité MCPs actifs — désactiver les non-essentiels | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | 📋 À FAIRE | MCPs = 54.7% du prompt (~15000 tokens) — audit Tavily/Playwright/SysDiag |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
