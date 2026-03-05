@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-06 (A7 enrichi + A18 ajouté : audit MCPs)
+> Dernière mise à jour : 2026-03-06 (T6 lié à A18 — Venice AI à évaluer)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -20,7 +20,7 @@
 | T2 | Fallback Tavily Recherche Web | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | À réaligner avec nouveaux axes |
 | T4 | Lazy MCP Tool Loading | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | Aucune implémentation trouvée |
 | T5 | MCP Response Caching | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | En attente de priorité |
-| T6 | Étude A0T Token | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
+| T6 | Étude A0T Token / Venice AI (inférences gratuites) | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | À évaluer dans A18 — potentiel remplacement MCPs coûteux par Venice AI gratuit |
 | T7 | Évaluation Modèle Embedding | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
 | T8 | Chrome / Tests Navigateur | 🟢 P3 | 🟢 FAIBLE | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
 
