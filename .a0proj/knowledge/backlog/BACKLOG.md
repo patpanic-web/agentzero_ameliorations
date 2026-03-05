@@ -24,6 +24,8 @@
 | T7 | Évaluation Modèle Embedding | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
 | T8 | Chrome / Tests Navigateur | 🟢 P3 | 🟢 FAIBLE | ⏱️ 1h | ⏸️ REPORTÉ | En attente de priorité |
 
+| A14 | Audit intégration BMAD personas dans l'environnement | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ | BMAD_PERSONAS.md créé + template mis à jour |
+| A15 | Audit consommation tokens — impact global | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | 🔄 EN COURS | Priorité maîtrise des coûts LLM |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
