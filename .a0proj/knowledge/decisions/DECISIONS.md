@@ -280,3 +280,16 @@ Suppression complète du MCP Git de la configuration `settings.json`.
 **Réversibilité :** Réajouter les entrées dans `mcp_servers` de `/a0/usr/settings.json`
 
 **Validé par :** PO — 2026-03-06
+
+## Décision d'adaptation BMAD
+- **Date**: 2026-03-06
+- **Détails**: Décidé d'intégrer les personnages manquants et les workflows de BMAD avec Agent Zero pour améliorer l'efficacité et la modularité du framework.
+
+## [2026-03-06] A20 — Consolidation BMAD vs Modularisation
+**Contexte :** A20 initialement prévu comme modularisation lazy loading du skill BMAD.
+**Analyse :** Recherche approfondie BMAD v6 officiel + alternatives autonomes (bmad-mcp-server, bmalph).
+**Décision :** Abandon modularisation (non pertinent). Consolidation BMAD via 3 corrections :
+1. Enrichissement BMAD_PERSONAS.md : +2 personas (QA, Scrum Master) + Quality Gates + DoD + IRG
+2. Templates niv2 synchronisés avec versions enrichies
+3. Bug corrigé dans init-governance.sh (BMAD_PERSONAS.md non copié)
+**Résultat :** BMAD universel et complet dans tout projet A0 via project-governance Level 2.

@@ -68,3 +68,9 @@
 - **Sprint 3** (2026-03-05) : "La Gouvernance" — A8 + A10 + A12 + A13 (git governance + templates + SSOT + bootstrap)
 - **Sprint 4** (2026-03-05/06) : "La Configuration" — A9 + A6 + A5 + A14 (git_url + MCP path + audit LLM + désactivation MCP Git)
 - **Sprint 5** (2026-03-06) : "La Performance" — A18 (suppression MCPs Playwright+SysDiag → -12250 tokens/msg -44.7%) + A17 reporté avec monitoring MCP
+
+## Nouvelle Tâche: Analyse d'adaptation BMAD
+- **Description**: Explorer et adapter les éléments du BMAD v6 dans Agent Zero.
+- **Livrables**: Rapport détaillé sauvegardé dans `knowledge/bmad/analysis/A20_BMAD_OFFICIEL_ADAPTATONS_A0.md`.
+- **Priorité**: P1
+- **Date de création**: 2026-03-06
