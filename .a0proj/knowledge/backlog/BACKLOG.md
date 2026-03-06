@@ -31,6 +31,7 @@
 | A20 | Consolidation BMAD universelle (personas+QA+Scrum+QualityGates+DoD+bugfix) | 🟡 P2 | 🔴 HAUT | ⏱️ 3h | ✅ TERMINÉ | Analyse BMAD v6 officiel + alternatives autonomes. Enrichissement BMAD_PERSONAS.md (+QA+SM+QualityGates+DoD+IRG). Templates niv2 synchronisés. Bug init-governance.sh corrigé (BMAD_PERSONAS.md non copié). |
 | A21 | Système auto-amélioration Agent-Zero | 🟡 P2 | 🔴 HAUT | ⏱️ 3-4h | 📋 À FAIRE | Analyse + implémentation dun mécanisme dintrospection et dauto-optimisation — scheduler, logs, feedback post-session |
 | A22 | BMAD Personas Multi-Model : LLM + outils par phase | 🟢 P3 | 🔴 HAUT | ⏱️ ~10h | 📋 À FAIRE | Assigner un LLM optimal + liste d'outils filtrés à chaque persona BMAD. BA/PM/Scrum → LLM léger (~$0.08/1M). Architect/Developer → LLM puissant. Impact estimé : -56% coût/session. Portée universelle via skill project-governance Level 2. |
+| A23 | Interface Kanban PO ↔ Agent Zero | 🟢 P3 | 🔴 HAUT | ⏱️ ? | 💡 IDÉE | Concept : remplacer/compléter l'interface chat par un Kanban board agile. Le PO interagit avec A0 comme avec une équipe (colonnes To Do/In Progress/Done). Sync BACKLOG.md ↔ board visuel. À explorer : intégration outil existant (Trello/GitHub Projects/Notion/Linear) vs interface custom. Phase Analysis requise. |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
