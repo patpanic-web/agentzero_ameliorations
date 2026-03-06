@@ -32,7 +32,7 @@
 | A21 | Système auto-amélioration Agent-Zero | 🟡 P2 | 🔴 HAUT | ⏱️ 3h | ✅ TERMINÉ (Sprint 7) | Skill self-audit créé (/a0/usr/skills/self-audit/) + scheduled task hebdomadaire (lundi 6h, ID: QkpuguTa) — analyse sessions, détection patterns, propositions backlog |
 | A22 | BMAD Personas Multi-Model : LLM + outils par phase | 🟢 P3 | 🔴 HAUT | ⏱️ ~10h | 🔄 EN COURS (Analysis) | Assigner un LLM optimal + liste d'outils filtrés à chaque persona BMAD. BA/PM/Scrum → LLM léger (~$0.08/1M). Architect/Developer → LLM puissant. Impact estimé : -56% coût/session. Portée universelle via skill project-governance Level 2. |
 | A23 | Interface Kanban PO ↔ Agent Zero | 🟢 P3 | 🔴 HAUT | ⏱️ ? | 🔄 EN COURS (Analysis) | Concept : remplacer/compléter l'interface chat par un Kanban board agile. Le PO interagit avec A0 comme avec une équipe (colonnes To Do/In Progress/Done). Sync BACKLOG.md ↔ board visuel. À explorer : intégration outil existant (Trello/GitHub Projects/Notion/Linear) vs interface custom. Phase Analysis requise. |
-| A24 | Prénoms formels personas BMAD | 🟡 P2 | 🟡 MOYEN | ⏱️ 15 min | 🔄 EN COURS (Analysis) | Gap d'implémentation : BMAD_PERSONAS.md définit des rôles sans prénoms. PO veut voir "Mary (BA)", "Sarah (PM)" etc. dans les conversations. |
+| A24 | Personas BMAD complets (prénoms + personnalités + outils) | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 8) | Gap d'implémentation : BMAD_PERSONAS.md définit des rôles sans prénoms. PO veut voir "Mary (BA)", "Sarah (PM)" etc. dans les conversations. |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
