@@ -28,7 +28,7 @@
 | A17 | Validation ToolRegistry Filter en production | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | ⏸️ REPORTÉ | Déclencher si MCPs actifs > 15 outils — actuellement 5 (Tavily seul) après A18 |
 | A18 | Audit utilité MCPs actifs — désactiver les non-essentiels | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 5) | Playwright (22 outils) + System-Diag (27 outils) supprimés → -12250 tokens/msg (-44.7%) |
 | A19 | Enrichissement profils developer/researcher | 🟡 P2 | 🟡 MOYEN | ⏱️ 2h | 📋 À FAIRE | Étude prompts défaut A0 + bonnes pratiques web → enrichissement minimal non perturbateur |
-| A20 | Modularisation skill BMAD — Lazy loading par phase | 🟡 P2 | 🔴 HAUT | ⏱️ 3h | 📋 À FAIRE | Recherche GitHub officiel bmad-code/bmad-method (modularité native ?), retours utilisateurs frameworks agentiques, évaluation refonte logique intégration A0 → architecture modulaire load-on-demand par phase BMAD |
+| A20 | Consolidation BMAD universelle (personas+QA+Scrum+QualityGates+DoD+bugfix) | 🟡 P2 | 🔴 HAUT | ⏱️ 3h | ✅ TERMINÉ | Analyse BMAD v6 officiel + alternatives autonomes. Enrichissement BMAD_PERSONAS.md (+QA+SM+QualityGates+DoD+IRG). Templates niv2 synchronisés. Bug init-governance.sh corrigé (BMAD_PERSONAS.md non copié). |
 | A21 | Système auto-amélioration Agent-Zero | 🟡 P2 | 🔴 HAUT | ⏱️ 3-4h | 📋 À FAIRE | Analyse + implémentation dun mécanisme dintrospection et dauto-optimisation — scheduler, logs, feedback post-session |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
