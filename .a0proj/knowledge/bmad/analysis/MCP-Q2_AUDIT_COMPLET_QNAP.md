@@ -10,13 +10,47 @@
 
 | Catégorie | Score | Commentaire |
 |-----------|-------|-------------|
-| **Sécurité Globale** | 🟡 7.5/10 | Points à améliorer |
+| **Sécurité Globale** | 🔴 5/10 (Vulnérabilités critiques) | Points à améliorer |
 | **Exposition Réseau** | 🟢 8/10 | Tailscale bien configuré |
 | **Services** | 🟡 6/10 | Trop de services actifs |
 | **Stockage** | 🟢 8.5/10 | RAID5 sain, 53% libre |
 | **Surveillance** | 🟢 8/10 | Logs actifs mais alertes à traiter |
 
 ---
+
+
+
+---
+
+## 🚨 ALERTE SÉCURITÉ - Vulnérabilités Critiques QTS 5.2.x
+
+### Source : QNAP Security Advisory QSA-25-45 (PWN2OWN 2025)
+
+⚠️ **Votre firmware QTS 5.2.8 est concerné par ces vulnérabilités :**
+
+| CVE | Type | Sévérité | Impact |
+|-----|------|----------|--------|
+| **CVE-2025-62849** | SQL Injection | 🔴 Critique | Execution de code à distance |
+| **CVE-2025-62847** | Command Injection | 🔴 Critique | Exécution de commandes |
+| **CVE-2025-59385** | Authentication Bypass | 🔴 Critique | Contournement authentification |
+| **CVE-2025-62848** | DoS | 🟡 Moyen | Déni de service |
+
+### 🔴 Action Urgente Requise
+
+**Mettre à jour QTS vers la dernière version immédiatement.**
+
+Vérifier les mises à jour sur : https://www.qnap.com/en/support
+
+### Recommandations Temporaires (en attendant mise à jour)
+
+1. **Désactiver myQNAPcloud** - Réduire la surface d'attaque
+2. **Limiter l'accès réseau** - IP whitelist via Tailscale uniquement
+3. **Désactiver services non essentiels** - FTP, SSH si inutilisés
+4. **Activer QuFirewall** - Si disponible
+5. **Surveiller les logs** - Rechercher activités suspectes
+
+---
+
 
 ## 1. Connexions Externes & Réseau
 
