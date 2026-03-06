@@ -29,6 +29,7 @@
 | A18 | Audit utilité MCPs actifs — désactiver les non-essentiels | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 5) | Playwright (22 outils) + System-Diag (27 outils) supprimés → -12250 tokens/msg (-44.7%) |
 | A19 | Enrichissement profils developer/researcher | 🟡 P2 | 🟡 MOYEN | ⏱️ 2h | 📋 À FAIRE | Étude prompts défaut A0 + bonnes pratiques web → enrichissement minimal non perturbateur |
 | A20 | Modularisation skill BMAD — Lazy loading par phase | 🟡 P2 | 🔴 HAUT | ⏱️ 3h | 📋 À FAIRE | Recherche GitHub officiel bmad-code/bmad-method (modularité native ?), retours utilisateurs frameworks agentiques, évaluation refonte logique intégration A0 → architecture modulaire load-on-demand par phase BMAD |
+| A21 | Système auto-amélioration Agent-Zero | 🟡 P2 | 🔴 HAUT | ⏱️ 3-4h | 📋 À FAIRE | Analyse + implémentation dun mécanisme dintrospection et dauto-optimisation — scheduler, logs, feedback post-session |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
@@ -45,7 +46,7 @@
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
 |----|-------|----------|--------|--------|--------|------|
-| A11 | Audit de sécurité complet du système | 🟡 P2 | 🔴 HAUT | ⏱️ 2-3h | 📋 À FAIRE | |
+| A11 | Audit de sécurité complet du système | 🟢 P3 | 🔴 HAUT | ⏱️ 2-3h | ⏸️ REPORTÉ | |
 | T3 | Tool Description Augmenter | 🟢 P3 | 🟢 FAIBLE | ⏱️ 1h | ❌ ABANDONNÉ | Rapport coût/bénéfice défavorable |
 
 ---
