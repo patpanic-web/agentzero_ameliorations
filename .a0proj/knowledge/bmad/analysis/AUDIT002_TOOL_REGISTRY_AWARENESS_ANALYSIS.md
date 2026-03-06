@@ -1,57 +1,34 @@
-# 🔍 Analysis — AUDIT-002 : Tool Registry Awareness Enhancement
+# 🔍 Analysis — AUDIT-002 : Tool Not Found (CAUSE IDENTIFIÉE)
 
-> Date : 2026-03-06 | Analyst : Business Analyst BMAD | Statut : 🔄 EN COURS
-> Source : Skill self-audit (A21) — 23 erreurs d'outils inconnus détectées
-
----
-
-## 📌 Contexte & Besoin
-
-**Constat** : Le self-audit a détecté 23 appels à des outils inconnus ou indisponibles. Les agents appellent des outils qui n'existent pas dans leur contexte actuel, ce qui génère des erreurs et des retries coûteux.
-
-**Besoin** : Améliorer la conscience des agents quant aux outils disponibles dans leur contexte.
+> Date : 2026-03-06 | Analyst : Business Analyst BMAD | Statut : ✅ ANALYSE COMPLÈTE
 
 ---
 
-## 🎯 Critères de Succès
+## 🎯 Cause Racine Identifiée
 
-- [ ] Réduction des appels à des outils inconnus à < 3
-- [ ] Les agents savent toujours quels outils sont disponibles
-- [ ] Solution No-Core-Change
-- [ ] Mesurable via le prochain self-audit
+### Deux sources distinctes :
 
----
+**Source 1 (principale) — Boucles `bc` → appels outils en retry**
+- Dans les boucles retry causées par `bc` manquant, l'agent appelle des outils dans des états incohérents
+- `fw.tool_not_found.md` déclenché dans ces contextes de loop
 
-## ❓ Questions de Découverte
-
-1. **Quels outils** : Quels outils sont appelés à tort ? (outils supprimés ? outils de profils différents ?)
-2. **Qui appelle** : Agent principal ou subordinates ?
-3. **Lien avec A18** : Les suppressions Playwright/SysDiag ont-elles contribué à ces erreurs ?
-4. **Lien avec A17** : Le ToolRegistry Filter reporté est-il la bonne solution ici ?
-5. **Fréquence** : Ces 23 erreurs sont-elles concentrées ou distribuées ?
+**Source 2 — Références à MCPs supprimés (A18)**
+- Playwright (22 outils) et System-Diag (27 outils) ont été supprimés au Sprint 5
+- Des sessions/subordinates créés AVANT A18 tentent encore d'appeler ces outils
+- Résolution naturelle : les sessions anciennes expireront
 
 ---
 
 ## 🔗 Dépendances
 
-- A17 (ToolRegistry Filter) — potentiellement lié
-- A18 (suppression MCPs Playwright+SysDiag) — peut être source d'erreurs
-- Skill self-audit (A21)
+- AUDIT-003 (cause principale)
+- A18 (suppression MCPs — cause secondaire, résolution naturelle)
+- A17 (ToolRegistry Filter) — NON nécessaire pour ce problème
 
 ---
 
-## ⚠️ Risques
+## 💡 Solution
 
-| Risque | Probabilité | Impact | Mitigation |
-|--------|-------------|--------|------------|
-| Nécessite A17 (effort 2h) | Moyen | Moyen | Évaluer solution plus légère |
-| Erreurs dues à des agents legacy | Faible | Faible | Nettoyer les instructions obsolètes |
-
----
-
-## 📋 Livrables Attendus
-
-- Liste des outils appelés à tort (avec contexte)
-- Lien ou non avec A17
-- Proposition de correction (prompt override ou ToolRegistry)
+- Court terme : résoudre `bc` (AUDIT-003) élimine la majorité des tool_not_found
+- Long terme : ajouter dans les instructions agents une liste des outils disponibles actuels
 
