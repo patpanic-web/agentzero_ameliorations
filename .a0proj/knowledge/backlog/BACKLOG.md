@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-06 (Sprint 9 : MCP-Q1 TERMINÉ)
+> Dernière mise à jour : 2026-03-06 (Sprint 9 : MCP-Q1 + MCP-Q2 TERMINÉS)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -46,7 +46,7 @@
 | A9 | Remplir git_url dans project.json | 🟡 P2 | 🟡 MOYEN | ⏱️ 2 min | ✅ TERMINÉ (Sprint 4) | |
 
 | MCP-Q1 | Installation + Configuration MCP QNAP | 🔴 P1 | 🔴 HAUT | ⏱️ 3h | ✅ TERMINÉ (Sprint 9) | Tests MCP passés : list_files + get_system_info OK |
-| MCP-Q2 | Audit configuration QNAP (réseau, sécurité, nettoyage) | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | 📋 À FAIRE | Vérifier accès Tailscale/VPS, nettoyage config, préparer pour Agent Zero |
+| MCP-Q2 | Audit configuration QNAP (réseau, sécurité, nettoyage) | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | ✅ TERMINÉ (Sprint 9) | Vérifier accès Tailscale/VPS, nettoyage config, préparer pour Agent Zero |
 | MCP-Q3 | Configuration QNAP comme stockage persistant | 🟡 P2 | 🟡 MOYEN | ⏱️ 1.5h | 📋 À FAIRE | Intégrer NAS comme /a0/usr/storage (cross-restart persistence) |
 ## 🔒 AXE SÉCURITÉ
 
