@@ -65,3 +65,21 @@
 
 **Correction :** Toujours ajouter la tâche au backlog d'abord, puis demander des clarifications.
 
+
+## 🔍 Checklist Début de Planification Sprint (A7)
+
+> **Déclencher AVANT toute proposition de sprint — même en cours de session.**
+
+- [ ] Backlog relu (`knowledge/backlog/BACKLOG.md`) — statuts à jour ?
+- [ ] Tâches TERMINÉES depuis la dernière relecture bien marquées ?
+- [ ] Nouvelles tâches / idées PO ajoutées au backlog ?
+- [ ] Priorités reflètent les décisions récentes du PO ?
+- [ ] Dépendances entre tâches vérifiées ?
+
+**Règle :** Ne jamais proposer un sprint sans avoir relu le backlog dans la même session ou confirmé qu'il est à jour.
+
+## 📝 Leçon Apprise (2026-03-06)
+
+**Erreur type :** Proposer un sprint basé sur une vision mémorisée du backlog sans relire le fichier réel.
+
+**Correction :** Toujours lire `BACKLOG.md` avant de proposer un sprint, même si le backlog a été lu en début de session — il a pu être modifié entre-temps.

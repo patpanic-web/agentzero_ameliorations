@@ -16,7 +16,7 @@
 | A3 | Enrichir profil Hacker (14 → 200 lignes) | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 2) | |
 | A4 | Renforcer rôle orchestrateur Agent0 | 🔴 P1 | 🟡 HAUT | ⏱️ 30 min | ✅ TERMINÉ (Sprint 2) | |
 | A5 | Documentation & config LLM par agent | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | |
-| A7 | Rigueur documentation/backlog — relire avant chaque planification sprint | 🟢 P3 | 🟡 MOYEN | ⏱️ 30 min | 📋 À FAIRE | A13 couvre bootstrap mais pas re-lecture avant planification mid-session |
+| A7 | Rigueur documentation/backlog — relire avant chaque planification sprint | 🟢 P3 | 🟡 MOYEN | ⏱️ 30 min | ✅ TERMINÉ (Sprint 6) | Checklist début planification sprint ajoutée dans BMAD_PROCESS.md |
 | T2 | Fallback Tavily Recherche Web | 🟢 P3 | 🟡 MOYEN | ⏱️ 1h | ⏸️ REPORTÉ | À réaligner avec nouveaux axes |
 | T4 | Lazy MCP Tool Loading | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | Aucune implémentation trouvée |
 | T5 | MCP Response Caching | 🟢 P3 | 🟡 MOYEN | ⏱️ 2h | ⏸️ REPORTÉ | En attente de priorité |
