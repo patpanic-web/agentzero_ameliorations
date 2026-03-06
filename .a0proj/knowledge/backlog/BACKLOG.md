@@ -78,3 +78,7 @@
 - **Livrables**: Rapport détaillé sauvegardé dans `knowledge/bmad/analysis/A20_BMAD_OFFICIEL_ADAPTATONS_A0.md`.
 - **Priorité**: P1
 - **Date de création**: 2026-03-06
+| AUDIT-001 | Improve JSON response validation | 💡 P3 | Found 21 JSON formatting errors. Consider adding pre-flight JSON validation before sending responses. | - | 💡 IDÉE | Auto-audit finding |
+| AUDIT-002 | Tool registry awareness enhancement | 💡 P3 | Found 23 unknown tool errors. Agents should have better awareness of available tools. | - | 💡 IDÉE | Auto-audit finding |
+| AUDIT-003 | Reduce message repetition loops | 💡 P3 | Found 39 retry/loop patterns. Implement smarter retry logic with exponential backoff. | - | 💡 IDÉE | Auto-audit finding |
+| AUDIT-004 | Optimize timeout handling | 💡 P3 | Found 17 timeout errors. Adjust timeout values or implement async timeouts. | - | 💡 IDÉE | Auto-audit finding |
