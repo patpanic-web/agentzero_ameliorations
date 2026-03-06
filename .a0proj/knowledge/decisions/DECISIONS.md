@@ -264,3 +264,19 @@ Suppression complète du MCP Git de la configuration `settings.json`.
 - /a0/usr/agents/researcher/prompts/agent.system.main.role.md : créé avec signalement proactif  
 - /a0/usr/agents/hacker/prompts/agent.system.main.role.md : enrichi avec signalement proactif
 **Règle :** Toute solution dans /a0/usr/ ou Git uniquement. Jamais /tmp/, jamais RAM seule.
+
+## [2026-03-06] A18 — Suppression MCPs Playwright + System-Diag
+
+**Décision :** Suppression complète (pas désactivation) de Playwright et System-Diag de settings.json
+
+**Justification :**
+- Playwright : 22 outils = ~5 500 tokens/msg — redondant avec `browser_agent` natif A0
+- System-Diag : 27 outils = ~6 750 tokens/msg — usage quasi-nul dans ce projet, `code_execution_tool` suffit
+- docker-mcp : conservé (déjà disabled, zéro impact tokens)
+- Tavily : conservé (valeur ajoutée réelle, recherche web avancée)
+
+**Impact mesuré :** -12 250 tokens/message (-44.7% du total estimé)
+
+**Réversibilité :** Réajouter les entrées dans `mcp_servers` de `/a0/usr/settings.json`
+
+**Validé par :** PO — 2026-03-06

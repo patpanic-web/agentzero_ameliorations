@@ -26,7 +26,7 @@
 
 | A16 | Intégration BMAD personas dans l'environnement | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 4) | BMAD_PERSONAS.md créé + template Niv.2 mis à jour |
 | A17 | Validation ToolRegistry Filter en production | 🔴 P1 | 🔴 HAUT | ⏱️ 2h | 📋 À FAIRE | Réduction ~48% tokens/msg — code prêt, validation prod requise |
-| A18 | Audit utilité MCPs actifs — désactiver les non-essentiels | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | 📋 À FAIRE | MCPs = 54.7% du prompt (~15000 tokens) — audit Tavily/Playwright/SysDiag |
+| A18 | Audit utilité MCPs actifs — désactiver les non-essentiels | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 5) | Playwright (22 outils) + System-Diag (27 outils) supprimés → -12250 tokens/msg (-44.7%) |
 | A19 | Enrichissement profils developer/researcher | 🟡 P2 | 🟡 MOYEN | ⏱️ 2h | 📋 À FAIRE | Étude prompts défaut A0 + bonnes pratiques web → enrichissement minimal non perturbateur |
 | A20 | Modularisation skill BMAD — Lazy loading par phase | 🟡 P2 | 🔴 HAUT | ⏱️ 3h | 📋 À FAIRE | Recherche GitHub officiel bmad-code/bmad-method (modularité native ?), retours utilisateurs frameworks agentiques, évaluation refonte logique intégration A0 → architecture modulaire load-on-demand par phase BMAD |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
