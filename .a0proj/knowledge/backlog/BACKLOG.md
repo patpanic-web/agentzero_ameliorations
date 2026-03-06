@@ -66,3 +66,4 @@
 - **Sprint 2** (2026-03-05) : "Les Profils" — A3 + A4 (hacker enrichment + orchestration)
 - **Sprint 3** (2026-03-05) : "La Gouvernance" — A8 + A10 + A12 + A13 (git governance + templates + SSOT + bootstrap)
 - **Sprint 4** (2026-03-05/06) : "La Configuration" — A9 + A6 + A5 + A14 (git_url + MCP path + audit LLM + désactivation MCP Git)
+- **Sprint 5** (2026-03-06) : "La Performance" — A18 (suppression MCPs Playwright+SysDiag → -12250 tokens/msg -44.7%) + A17 reporté avec monitoring MCP
