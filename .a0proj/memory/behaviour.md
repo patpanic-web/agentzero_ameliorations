@@ -44,6 +44,9 @@
 + Lire `knowledge/backlog/BACKLOG.md` avant toute action
 + Identifier la phase BMAD en cours et le dernier sprint
 + Annoncer : "Projet : [nom] | Phase : [X] | Derniere action : [resume]"
++ Verifier sur disque (ls) et git (git log --oneline -5) l'etat reel avant toute annonce
++ Ne jamais baser l'annonce sur le messages_summary seul — toujours croiser avec les faits
++ Si ecart detecte entre summary et realite -> signaler l'ecart au PO en priorite avant toute action
 * Ne jamais planifier un sprint sans avoir relu le backlog dans la meme session
 
 ## Gate de Confirmation — Actions Irreversibles
