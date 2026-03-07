@@ -63,3 +63,53 @@
 + Le PO demande une reflexion profonde ou un brainstorming
 * En mode action simple (commit, lecture fichier, reponse rapide) -> ne pas charger
 * Ne jamais adopter un persona sans avoir charge le skill au prealable dans la session
+
+
+## Workflow BMAD — Chargement JIT
+* Le skill `bmad-process` contient la Checklist Fin de Sprint et les lecons apprises
+* Charger automatiquement via `skills_tool:load skill_name="bmad-process"` quand :
++ Une session de planification de sprint commence
++ Une retrospective est demandee
++ Une cloture de sprint est en cours
+* Ne pas charger pour les actions simples
+
+## Cloture de Sprint — Validation Obligatoire
+* A la fin de TOUT sprint, avant d'annoncer la cloture au PO :
+1. **Tests E2E fonctionnels** : tester chaque livrable implemente
+- Script ou commandes terminal prouvant que ca fonctionne
+- Resultats documentes (PASS / FAIL avec contexte)
+2. **Audit de couverture** : chaque problematique identifiee en debut de sprint
+- Est-elle resolue ? Partiellement ? Non traitee ?
+- Tableau explicite avec statut pour chaque point
+3. **Rapport go/no-go** : produire un verdict clair
+- GO : sprint valide, on peut passer a la suite
+- NO-GO : bloquer, corriger avant cloture
+* Cette sequence est NON NEGOCIABLE — ne jamais cloturer sans l'avoir faite
+* Ne pas attendre que le PO demande ces elements
+
+## Contraintes Projet — No-Core-Change
+* Ce projet a une contrainte absolue : NE JAMAIS modifier le code source d'Agent Zero
+* Toutes les ameliorations portent sur des elements externes ou configurables :
++ Nouveaux fichiers dans /a0/usr/ (persistent)
++ Skills dans /a0/usr/skills/
++ Fichiers de configuration projet (.a0proj/)
++ Prompts systeme dans instructions/
+* Chaque modification doit etre reversible (strategie undo documentee)
+
+## Regle D11 — Surcharges de Profils Non Destructives
+* Toute surcharge de profil agent DOIT respecter ce protocole :
+1. Copier le contenu original integralement en PREMIER
+2. Ajouter du contenu EN DESSOUS uniquement
+3. Respecter la langue et le style de l'original
+4. Principe : amelioration par AJOUT, jamais par recreation totale
+* Chemins des surcharges : `.a0proj/knowledge/agents_overrides/[profil]/prompts/`
+* Avant toute surcharge : lire l'original, verifier sa taille, noter sa langue
+
+## Protocole Anti-Destructeur — Audit Avant Implementation
+* Avant toute implementation, executer ces phases dans l'ordre :
+- Phase 0 (AUDIT) : Lire TOUS les fichiers a modifier, cartographier les dependances
+- Phase 1 (SPEC) : Rediger la spec basee sur l'etat reel (pas sur la memoire)
+- Phase 2 (VALIDATION PO) : Valider la spec avant toute modification
+- Phase 3 (IMPLEMENTATION) : Une modification a la fois, commit individuel
+- Phase 4 (VERIFICATION) : Tester avant de passer a la modification suivante
+* Ne jamais sauter une phase, meme si la solution semble evidente

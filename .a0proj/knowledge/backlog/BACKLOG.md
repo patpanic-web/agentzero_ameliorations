@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-07 (Sprint 11 terminé — A26 implémenté)
+> Dernière mise à jour : 2026-03-07 (Sprint 12 terminé — A27 implémenté)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -35,6 +35,7 @@
 | A24 | Personas BMAD complets (prénoms + personnalités + outils) | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 8) | Gap d'implémentation : BMAD_PERSONAS.md définit des rôles sans prénoms. PO veut voir "Mary (BA)", "Sarah (PM)" etc. dans les conversations. |
 | A25 | Correction méthodologie surcharges profils agents | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 10) | Correction A19 : surcharges developer/researcher étaient destructives (FR, 600b écrasant 15k). Méthodologie établie : copier original intégral + ajouter EN uniquement. Hacker : section FR→EN. |
 | A26 | Modularisation BMAD + Refonte Workflow Agent Zero | 🔴 P1 | 🔴 MAJEUR | ⏱️ 4h | ✅ TERMINÉ (Sprint 11) | M1-M4 implementes : behaviour.md (+4 regles), project.json nettoye, BMAD_PERSONAS/PROCESS migres en skills JIT. Skills bmad-personas (8 personas) + bmad-process crees. BACKLOG_GLOBAL.md cree. Gain reel : -13 439b/req. |
+| A27 | Refonte Architecture behaviour.md — ADN Global + Projet | 🔴 P1 | 🔴 MAJEUR | ⏱️ 3h | ✅ TERMINÉ (Sprint 12) | M1: behaviour.md global créé (/a0/usr/memory/default/ — 3700b, 6 blocs R1-R6). M2: behaviour.md projet enrichi (6516b, 12 blocs +6 nouveaux: JIT bmad-process, Clôture Sprint E2E, No-Core-Change, D11, Protocole Anti-Destructeur). M3: Checklist Fin de Sprint enrichie dans bmad-process (E2E+Audit+Go/No-Go). M4: Template behaviour.md créé dans project-governance (5562b) + init-governance.sh auto-création. M5: surcharges developer/researcher confirmées D11-conformes. |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
