@@ -29,3 +29,4 @@ Thumbs.db
 
 # Memory files (generated)
 .a0proj/memory/
+!.a0proj/memory/behaviour.md
