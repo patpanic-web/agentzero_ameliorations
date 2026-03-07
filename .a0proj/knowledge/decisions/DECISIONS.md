@@ -336,3 +336,41 @@ Restauration : `cp .a0proj/knowledge/agents_overrides/{profil}/prompts/* /a0/usr
 
 ### Validé par
 PO — 2026-03-07
+
+---
+
+## D12 — Modularisation BMAD via Skills JIT
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | 2026-03-07 |
+| **Statut** | Prete pour validation PO |
+| **Decideur** | En attente PO |
+| **Contexte** | BMAD_PERSONAS.md (9 863b) + BMAD_PROCESS.md (4 099b) injectes a chaque requete meme inutilement |
+
+### Probleme
+Audit certifie code source : 14k bytes injectes systematiquement, meme pour actions simples.
+Skill bmad-method reference dans project.json est fantome (n'existe pas).
+Aucune separation projet/hors-projet pour les idees.
+
+### Solution Retenue
+- Migrer BMAD_PERSONAS.md → `/a0/usr/skills/bmad-personas/SKILL.md` (JIT)
+- Migrer BMAD_PROCESS.md → `/a0/usr/skills/bmad-process/SKILL.md` (JIT)
+- Creer `BMAD_CORE.md` leger (~523b) dans instructions/
+- Enrichir `behaviour.md` avec 4 nouvelles regles
+- Creer `/a0/usr/BACKLOG_GLOBAL.md` pour idees hors projet
+- Nettoyer project.json (supprimer reference skill fantome)
+
+### Gain Estime
+-13 439 bytes/requete sur ~80% des echanges
+
+### Reversibilite
+```bash
+# Chaque modification = 1 commit individuel
+git revert <hash> && git push origin main
+# Skills (hors repo) : rm -rf /a0/usr/skills/bmad-personas/ /a0/usr/skills/bmad-process/
+# BACKLOG_GLOBAL : rm /a0/usr/BACKLOG_GLOBAL.md
+```
+
+### Spec Detaillee
+`knowledge/bmad/solutioning/A26_SPEC_COMPLETE.md`

@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-07 (Session analyse besoins + audit A0+BMAD + préparation A26)
+> Dernière mise à jour : 2026-03-07 (Solutioning A26 terminé — en attente validation PO)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -34,7 +34,7 @@
 | A23 | Interface Kanban PO ↔ Agent Zero | 🟢 P3 | 🔴 HAUT | ⏱️ ? | 🔄 EN COURS (Analysis) | Concept : remplacer/compléter l'interface chat par un Kanban board agile. Le PO interagit avec A0 comme avec une équipe (colonnes To Do/In Progress/Done). Sync BACKLOG.md ↔ board visuel. À explorer : intégration outil existant (Trello/GitHub Projects/Notion/Linear) vs interface custom. Phase Analysis requise. |
 | A24 | Personas BMAD complets (prénoms + personnalités + outils) | 🟡 P2 | 🟡 MOYEN | ⏱️ 1h | ✅ TERMINÉ (Sprint 8) | Gap d'implémentation : BMAD_PERSONAS.md définit des rôles sans prénoms. PO veut voir "Mary (BA)", "Sarah (PM)" etc. dans les conversations. |
 | A25 | Correction méthodologie surcharges profils agents | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | ✅ TERMINÉ (Sprint 10) | Correction A19 : surcharges developer/researcher étaient destructives (FR, 600b écrasant 15k). Méthodologie établie : copier original intégral + ajouter EN uniquement. Hacker : section FR→EN. |
-| A26 | Modularisation BMAD + Refonte Workflow Agent Zero | 🔴 P1 | 🔴 MAJEUR | ⏱️ 4h | 🔍 EN COURS (Analysis) | Refonte : behaviour.md (+4 règles), project.json (nettoyage skill fantôme), BMAD modulaire via skills (JIT), BMAD_CORE.md léger (~500b vs 14k), statuts maturité backlog, capture idées. Basé sur audit certifié code source. |
+| A26 | Modularisation BMAD + Refonte Workflow Agent Zero | 🔴 P1 | 🔴 MAJEUR | ⏱️ 4h | ⏳ VALIDATION PO (Solutioning ✅) | 7 modifications specifiees (M1-M7). Skills bmad-personas (8 personas) + bmad-process crees. Spec : knowledge/bmad/solutioning/A26_SPEC_COMPLETE.md. Gain : -13 439b/req sur 80% echanges. |
 ## 📁 AXE PROJET — Gouvernance & Git/GitHub
 
 | ID | Titre | Priorité | Impact | Effort | Statut | Note |
