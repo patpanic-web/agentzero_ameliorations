@@ -83,3 +83,22 @@
 **Erreur type :** Proposer un sprint basé sur une vision mémorisée du backlog sans relire le fichier réel.
 
 **Correction :** Toujours lire `BACKLOG.md` avant de proposer un sprint, même si le backlog a été lu en début de session — il a pu être modifié entre-temps.
+
+## 📝 Leçon Apprise (2026-03-07) — Méthodologie Surcharges Profils
+
+**Erreur commise (A19/Sprint 7) :** Surcharges developer et researcher créées de façon destructive :
+- Langue changée (EN → FR)
+- Contenu original perdu (15k bytes remplacés par 600 bytes)
+- Style non respecté
+
+**Règle établie (D11) :** Toute surcharge de profil DOIT :
+1. Copier l'original intégralement en premier
+2. Ajouter du contenu EN DESSOUS uniquement
+3. Respecter la langue et le style de l'original
+4. Principe fondamental : **amélioration par AJOUT, jamais par recréation totale**
+
+**Vérification obligatoire avant toute surcharge :**
+- [ ] Ai-je lu l'original dans `/a0/agents/{profil}/prompts/` ?
+- [ ] La surcharge commence-t-elle par une copie intégrale de l'original ?
+- [ ] Les ajouts sont-ils dans la même langue et le même style ?
+- [ ] La taille du fichier de surcharge est-elle >= taille de l'original ?

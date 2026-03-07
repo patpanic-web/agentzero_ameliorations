@@ -293,3 +293,46 @@ Suppression complète du MCP Git de la configuration `settings.json`.
 2. Templates niv2 synchronisés avec versions enrichies
 3. Bug corrigé dans init-governance.sh (BMAD_PERSONAS.md non copié)
 **Résultat :** BMAD universel et complet dans tout projet A0 via project-governance Level 2.
+
+## [2026-03-07] D11 — Méthodologie Surcharges Profils Agents (A25)
+
+| Champ | Valeur |
+|-------|--------|
+| **Date** | 2026-03-07 |
+| **Statut** | ✅ Adoptée |
+| **Décideur** | Product Owner |
+| **Contexte** | A19 (Sprint 7) avait créé des surcharges destructives : developer/researcher remplacés par 600b FR écrasant 15k EN originaux |
+
+### Problème
+Le mécanisme de fusion (`_merge_agents`) écrase le fichier original par la surcharge entière. Une surcharge qui ne contient pas l'original efface tout le contenu shipped.
+
+### Options Considérées
+1. **Surcharge partielle** — Ajouter uniquement le delta → IMPOSSIBLE : le mécanisme écrase entièrement
+2. **Surcharge destructive** — Réécrire entièrement → ❌ Perte de contenu rich original
+3. **Surcharge additive** — Copier original intégral + ajouter sections en dessous → ✅ Retenu
+
+### Décision
+**Méthodologie obligatoire pour toute surcharge de profil :**
+1. Copier le contenu original (`/a0/agents/{profil}/prompts/`) intégralement
+2. Ajouter les nouvelles sections EN DESSOUS uniquement
+3. Langue = même langue que l'original (EN)
+4. Style = même style minimaliste que l'original
+5. Principe : amélioration par AJOUT, jamais par recréation totale
+
+### Contenu Standard à Ajouter (section `## Operational Context`)
+```
+## Operational Context
+running inside agent zero framework, subordinate to agent0
+file persistence: save all work files under /a0/usr/ — never /tmp/ or RAM only
+token economy: use §§include(/path/to/file) to reference files instead of rewriting content
+never assume success: always verify outputs before reporting task completion
+proactive reporting: if anomaly, risk or opportunity observed, report clearly in result
+supervisor agent0 decides if action required — no initiative outside assigned task
+```
+
+### Réversibilité
+Fichiers versionnés dans `.a0proj/knowledge/agents_overrides/` + Git.
+Restauration : `cp .a0proj/knowledge/agents_overrides/{profil}/prompts/* /a0/usr/agents/{profil}/prompts/`
+
+### Validé par
+PO — 2026-03-07
