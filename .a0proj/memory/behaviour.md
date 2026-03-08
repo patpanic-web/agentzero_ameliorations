@@ -116,3 +116,27 @@
 - Phase 3 (IMPLEMENTATION) : Une modification a la fois, commit individuel
 - Phase 4 (VERIFICATION) : Tester avant de passer a la modification suivante
 * Ne jamais sauter une phase, meme si la solution semble evidente
+
+
+## Pre-Flight Checklist — Intégration Opérationnelle
+> Applicable AVANT chaque réponse finale (G-001)
+> Objectif : renforcer systématiquement délégation et mémoire
+
+### Vérification obligatoire (check mentale)
+
+| Question | Si oui → Action | Outil |
+|----------|-----------------|-------|
+| **Tâche d'exécution standard ?** (code, tests, audit, recherche) | Déléguer immédiatement | `call_subordinate` |
+| **Itération sur résultat existant ?** | Continuer avec subordonné | `call_subordinate` + `reset=false` |
+| **Solution/Leçon/Apprentissage créé ?** | Sauvegarder immédiatement | `memory_save` |
+| **Résultat long à transmettre ?** | Inclure par référence | `§§include(path)` |
+
+### Exceptions justifiées
+- Tâche unique et simple nécessitant supervision directe
+- Contexte conversationnel nécessitant continuité immédiate
+- Urgence documentée avec raisonnement explicite
+
+### Auto-évaluation rapide (mensuelle)
+- Taux de délégation : ___ %
+- Entrées mémoire créées : ___ / mois
+- Usage de §§include() : ___ % des cas éligibles
