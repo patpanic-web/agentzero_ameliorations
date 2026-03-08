@@ -1,4 +1,32 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
+
+### MCP-QNAP-CRASH — Investigation corrélation MCP QNAP / crashes OpenRouter
+
+**ID**: MCP-QNAP-CRASH-1  
+**Priorité**: P1  
+**Statut**: 📋 EN COURS  
+**Date création**: 2026-03-08  
+**Assigné**: Agent Zero (investigation) → PO (décision)
+
+**Description**: Investigation suite à suspicion utilisateur que MCP QNAP cause des crashes/freeze Agent Zero avec erreur OpenRouter "No cookie auth credentials found". Investigation conclue: erreur OpenRouter = incident service indépendant; MCP QNAP = latence élevée (>15s) possible perturbation.
+
+**Livrables**:
+- ✅ Audit complet: `AUDIT_MCP_QNAP_OPENROUTER_CRASH_2026-03-08.md`
+- ⏳ Décision PO sur désactivation QNAP
+- ⏳ Décision PO sur investigation réseau
+
+**Solutions identifiées**:
+1. Désactiver MCP QNAP temporairement (T0)
+2. Augmenter timeouts MCP (T1)
+3. Investigation réseau approfondie (T2)
+4. Wrapper circuit-breaker (T3)
+
+**Prochaine action**: Attendre décision PO sur désactivation temporaire MCP QNAP.
+
+**Réversibilité**: Oui, désactivation immédiate possible.
+
+---
+
 > Dernière mise à jour : 2026-03-08
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
