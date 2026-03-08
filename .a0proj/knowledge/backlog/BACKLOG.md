@@ -1,5 +1,5 @@
 # 📋 BACKLOG — Agent-Zero Modular Optimizer
-> Dernière mise à jour : 2026-03-07 (Sprint 12 terminé — A27 implémenté)
+> Dernière mise à jour : 2026-03-08 (Sprint 12 terminé — A27 implémenté)
 
 <!-- ⚠️ FORMAT IMPOSÉ — NE PAS RESTRUCTURER CE FICHIER
      Conserver le format tableau. Ne pas convertir en sections ###.
@@ -59,6 +59,19 @@
 | T3 | Tool Description Augmenter | 🟢 P3 | 🟢 FAIBLE | ⏱️ 1h | ❌ ABANDONNÉ | Rapport coût/bénéfice défavorable |
 
 ---
+
+## 📁 AXE PROJET — Création & Templates
+> Améliorations identifiées lors des tests de création/adaptation de projets (2026-03-08)
+
+| ID | Titre | Priorité | Impact | Effort | Statut | Note |
+|----|-------|----------|--------|--------|--------|------|
+| GOV-001 | Template BACKLOG.md sans placeholder confus | 🔴 P1 | 🟡 MOYEN | ⏱️ 30 min | 📋 IDEA | Remplacer "| 1 | ..." par template vide commenté OU exemple réaliste NAS |
+| GOV-002 | README.md dans sous-dossiers knowledge/ | 🟡 P2 | 🟡 MOYEN | ⏱️ 30 min | 📋 IDEA | Expliquer rôle de fragments/, main/, solutions/ pour éviter confusion |
+| GOV-003 | README.md racine .a0proj/ — guide onboarding | 🔴 P1 | 🔴 HAUT | ⏱️ 30 min | 📋 IDEA | Structure, phase BMAD en cours, liens rapides vers fichiers clés |
+| GOV-004 | Template commenté pour agents.json | 🟢 P3 | 🟢 FAIBLE | ⏱️ 15 min | 📋 IDEA | Exemple ou lien vers doc pour guider configuration agents spécialisés |
+| GOV-005 | Section Contraintes Projet visible dans behaviour.md | 🟡 P2 | 🟡 MOYEN | ⏱️ 15 min | 📋 IDEA | Template explicite obligatoire + [À PERSONNALISER] en début de fichier |
+| GOV-006 | Checklist validation structure projet | 🟢 P3 | 🟡 MOYEN | ⏱️ 45 min | 📋 IDEA | Fichier CHECKLIST.md ou commande audit automatique (skill project-validator) |
+| GOV-007 | Guide de migration projets existants | 🔴 P1 | 🔴 HAUT | ⏱️ 1h | 📋 IDEA | Étapes + script d'audit pour adapter projets créés avant refonte workflow |
 
 ## 📊 Légende
 - 📋 À FAIRE | 🔄 EN COURS | ✅ TERMINÉ | ⏸️ REPORTÉ | ❌ ABANDONNÉ
