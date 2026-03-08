@@ -140,3 +140,24 @@
 - Taux de délégation : ___ %
 - Entrées mémoire créées : ___ / mois
 - Usage de §§include() : ___ % des cas éligibles
+
+
+## Vérification des Tâches Planifiées — Anti-Duplication
+> Avant de créer TOUTE tâche planifiée (scheduled, planned, adhoc)
+
+### Obligation systématique
+1. **Lister les tâches existantes** : `scheduler:list_tasks` avec filtres appropriés
+2. **Vérifier similarité** : Nom, objectif, fréquence — si >70% similaire = DUPLICAT
+3. **Action si duplicat** : 
+   - Ne PAS créer
+   - Proposer fusion ou enrichissement de l'existante
+   - Documenter la décision
+4. **Action si unique** : 
+   - Créer avec `dedicated_context=true` par défaut
+   - Noter l'ID dans le rapport de session
+
+### Rappel hebdomadaire
+En début de semaine, lister toutes les tâches planifiées et vérifier :
+- Redondances non détectées
+- Tâches obsolètes à supprimer
+- Chevauchements horaires

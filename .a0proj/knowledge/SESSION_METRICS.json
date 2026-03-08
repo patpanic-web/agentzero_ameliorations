@@ -1,0 +1,23 @@
+{
+  "last_session": {
+    "date": "2026-03-08",
+    "delegation_count": 0,
+    "memory_save_count": 1,
+    "include_usage_count": 0,
+    "tasks_total": 1,
+    "delegation_rate": 0.0
+  },
+  "current_session": {
+    "started_at": "2026-03-08T02:53:39.664884",
+    "delegation_count": 0,
+    "memory_save_count": 0,
+    "include_usage_count": 0,
+    "tasks_total": 0
+  },
+  "weekly_stats": {
+    "week_of": "2026-03-03",
+    "total_sessions": 1,
+    "avg_delegation_rate": 0.0,
+    "total_memory_entries": 1
+  }
+}
